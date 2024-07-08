@@ -10,7 +10,7 @@ services:
     environment:
       VAULT_ADDR: http://localhost:8200
     volumes:
-     - /c/Users/trond/Documents/projects/vault-dev:/vaultdev #you probably have to adjust this
+     - /Users/tabbyorwa/Documents/GitHub/vault-mssql-lab/vault:/vaultdev #you probably have to adjust this
   sqlserver:
     container_name: sqlserver
     image: microsoft/mssql-server-linux
