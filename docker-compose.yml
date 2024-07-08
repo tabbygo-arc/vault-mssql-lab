@@ -13,7 +13,7 @@ services:
      - /Users/tabbyorwa/Documents/GitHub/vault-mssql-lab/vault:/vaultdev #you probably have to adjust this
   sqlserver:
     container_name: sqlserver
-    image: microsoft/mssql-server-linux
+    image: microsoft/mssql-server
     environment:
       ACCEPT_EULA: Y
       SA_PASSWORD: MyPassword123
