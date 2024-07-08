@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -y
-RUN apt-get install -y python-pip python-dev build-essential python-software-properties libssl-dev libffi-dev
+RUN apt-get install -y python3-pip python-dev build-essential python-software-properties libssl-dev libffi-dev
 COPY . /app
 WORKDIR /app
 RUN pip install --upgrade pip
